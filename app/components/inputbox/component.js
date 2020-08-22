@@ -13,7 +13,7 @@ export default Component.extend({
             this.set('tasks', currentTasks.slice())
         },
         clearAll: function () {
-            this.tasks.length = 0;
+            this.set('tasks', [])
         }
     }
 })

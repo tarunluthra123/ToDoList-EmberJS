@@ -10,7 +10,13 @@ export default Component.extend({
     actions: {
         removeTask(taskName) {
             console.log('removetask ' + taskName)
-
+            let tasks = this.get('tasks')
+            console.log('remove from ', tasks)
+            const index = tasks.indexOf(taskName);
+            if (index > -1) {
+                tasks.splice(index, 1);
+            }
+            this.set('tasks', tasks.slice())
         }
     }
 })
