@@ -2,11 +2,9 @@ import Component from '@ember/component';
 
 export default Component.extend({
     actions: {
-        addTask: function (arg) {
-            let newTask = 'some task'
-            console.log(arg)
-            console.log(this.tasks)
-            console.log(this)
+        addTask: function () {
+            // console.log('abc=', this.get('newTask'))
+            let newTask = this.get('newTask')
             let currentTasks = this.tasks
             currentTasks.push(newTask)
             // this.tasks = currentTasks

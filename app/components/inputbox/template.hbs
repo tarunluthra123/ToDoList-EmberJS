@@ -1,11 +1,9 @@
 <div>
     <div>
-        <input type="text" placeholder="Enter some task here" id="taskInput">
+        {{input id="taskInput" value=newTask placeholder="Enter some task here"}}
     </div>
     <div>
-        <button {{action "addTask" 'random task'}}>Add Task</button>
-        <button {{action
-                "clearAll"}}>Clear
-        </button>
+        <button {{action "addTask"}}>Add Task</button>
+        <button {{action "clearAll"}}>Clear</button>
     </div>
 </div>
