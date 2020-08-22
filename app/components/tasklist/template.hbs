@@ -1,0 +1,11 @@
+<div>
+    <ul>
+        {{#each tasks as |task|}}
+            <li>
+                <button  {{action "removeTask" task}}>
+                    {{task}}
+                </button>
+            </li>
+        {{/each}}
+    </ul>
+</div>
