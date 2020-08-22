@@ -12,6 +12,9 @@ export default Component.extend({
         },
         clearAll: function () {
             this.set('tasks', [])
+        },
+        sortTasks: function () {
+            this.set('tasks', this.get('tasks').sort().slice())
         }
     }
 })
